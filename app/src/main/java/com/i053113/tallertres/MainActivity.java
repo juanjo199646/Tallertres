@@ -37,13 +37,6 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
    List<Users> usersList;
     UsersAdapter usersAdapter;
-
-   // List<Comments> commentsList;
-    //CommentsAdapter commentsAdapter;
-
-//PostAdapter postAdapter;
-   // List<Post> postList;
-
     Toolbar toolbar;
 
     @Override

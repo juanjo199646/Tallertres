@@ -30,6 +30,7 @@ public class PostActivity extends Activity {
     RecyclerView recyclerView;
     PostAdapter postAdapter;
     List<Post> postList;
+    Toolbar toolbar;
 
 
     @Override
@@ -41,6 +42,7 @@ public class PostActivity extends Activity {
 
         progressBar = (ProgressBar) findViewById(R.id.id_pb_item_post);
         recyclerView = (RecyclerView) findViewById(R.id.id_rv_item_post);
+        toolbar = (Toolbar) findViewById(R.id.id_tb_toolbar);
 
 
 
