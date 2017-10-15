@@ -2,13 +2,18 @@ package com.i053113.tallertres;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatSpinner;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -24,7 +29,7 @@ import org.json.JSONException;
 import java.io.IOException;
 import java.util.List;
 
-public class PostActivity extends Activity {
+public class PostActivity extends AppCompatActivity {
 
     ProgressBar progressBar;
     RecyclerView recyclerView;
@@ -45,7 +50,6 @@ public class PostActivity extends Activity {
         toolbar = (Toolbar) findViewById(R.id.id_tb_toolbar);
 
 
-
         //orientacion vertical ( simpre estas tres lineaas)
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
@@ -54,9 +58,34 @@ public class PostActivity extends Activity {
 
         loadData(Integer.toString(getIntent().getExtras().getInt("userId")));
 
-
-
+        showToolbar(getResources().getString(R.string.str_tb_title_p2),true);
     }
+
+    public void showToolbar(String title , boolean upButton){
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(title);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
+    }
+
+    public void showPantalla2(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        showPantalla2();
+        return super.onOptionsItemSelected(item);
+    }
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_pantalla_uno, menu);
+        return true;
+    }
+
 
     public void processData() {
         postAdapter = new PostAdapter(postList, getApplicationContext());

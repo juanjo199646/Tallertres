@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -57,7 +58,20 @@ public class MainActivity extends AppCompatActivity {
             linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
             recyclerView.setLayoutManager(linearLayoutManager);
 
+        showToolbar(getResources().getString(R.string.str_tb_title_p1));
+    }
 
+
+    public void showToolbar(String title){
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(title);
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_pantalla_uno, menu);
+        return true;
     }
 
     public void processData() {
