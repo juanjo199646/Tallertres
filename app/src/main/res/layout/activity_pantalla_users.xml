@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:layout_margin="10dp"
-
+    android:layout_height="300dp"
+    android:layout_margin="13dp"
+android:background="@drawable/fondo1"
     >
 
     <RelativeLayout
@@ -17,16 +17,17 @@
     <ImageView
         android:id="@+id/imageuno"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/usuario"
-        android:layout_marginRight="10dp"/>
+        android:layout_height="200dp"
+        android:src="@drawable/mujer"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:padding="10dp"
+        android:background="@drawable/border"
 
 
         >

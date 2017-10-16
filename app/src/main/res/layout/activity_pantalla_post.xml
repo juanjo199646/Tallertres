@@ -4,8 +4,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="430dp"
     android:layout_margin="10dp"
+    android:background="@drawable/fonodotro"
+
    >
 
 <RelativeLayout
@@ -16,14 +18,17 @@
     <ImageView
         android:id="@+id/imageuno"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/post"
+        android:layout_height="200dp"
+        android:src="@drawable/mujer2"
         android:layout_marginRight="10dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="86dp"
+        android:background="@drawable/borde_dos">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,7 +39,7 @@
                 android:text="id:"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/white"/>
             <TextView
                 android:id="@+id/id_tv_item_id_user"
                 android:layout_width="match_parent"
@@ -52,7 +57,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+           >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -63,7 +69,7 @@
                     android:text="userid:"
                     android:textStyle="bold"
                     android:textSize="20sp"
-                    android:textColor="@android:color/black"/>
+                    android:textColor="@android:color/white"/>
                 <TextView
                     android:id="@+id/id_tv_item_id_userid"
                     android:layout_width="match_parent"
@@ -86,7 +92,7 @@
                 android:text="TITLE:"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/white"/>
             <TextView
                 android:id="@+id/id_tv_item_id_title"
                 android:layout_width="match_parent"
@@ -108,13 +114,13 @@
                 android:text="BODY:"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/white"/>
             <TextView
                 android:id="@+id/id_tv_item_id_body"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="JuanJo/"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@android:color/black"
                 android:layout_marginLeft="10dp"/>
         </LinearLayout>
