@@ -26,6 +26,13 @@ public class JsonUsers {
         for (int i = 0 ; i <jsonArray.length(); i++){
             JSONObject item = jsonArray.getJSONObject(i);
 
+            JSONObject activity_pantalla_post =item.getJSONObject("address");
+            JSONObject activity_pantalla_comments =item.getJSONObject("company");
+
+
+
+
+
             // asignamos valores
 
             Users users = new Users();
@@ -33,6 +40,8 @@ public class JsonUsers {
             users.setId(item.getInt("id"));
             users.setName(item.getString("name"));
             users.setUsername(item.getString("username"));
+            users.setAddress(activity_pantalla_post.getString("city"));
+            users.setCompany(activity_pantalla_comments.getString("name"));
 
 
 

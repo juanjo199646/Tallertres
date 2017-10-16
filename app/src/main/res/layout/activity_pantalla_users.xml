@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="350dp"
     android:layout_margin="13dp"
 android:background="@drawable/fondo1"
     >
@@ -96,10 +96,55 @@ android:background="@drawable/fondo1"
                 android:layout_marginLeft="10dp"/>
         </LinearLayout>
 
+        <!--campo de Adrreess-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address (City) :"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/id_tv_item_id_useradress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gwenborough"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <!--campo de Adrreess-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de Company :"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/id_tv_item_id_usercompa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deckow-Crist"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
 
 
 
-</LinearLayout>
+
+
+
+    </LinearLayout>
 
     </RelativeLayout>
 

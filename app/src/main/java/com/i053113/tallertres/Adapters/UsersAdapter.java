@@ -55,6 +55,8 @@ public class UsersAdapter extends  RecyclerView.Adapter<UsersAdapter.ViewHolder>
         holder.textViewId.setText(Integer.toString(usersList.get(position).getId()));
         holder.textViewName.setText(usersList.get(position).getName());
         holder.textViewUsername.setText(usersList.get(position).getUsername());
+        holder.textViewAddress.setText(usersList.get(position).getAddress());
+        holder.textViewCompany.setText(usersList.get(position).getCompany());
 
 
 
@@ -75,6 +77,9 @@ public class UsersAdapter extends  RecyclerView.Adapter<UsersAdapter.ViewHolder>
         TextView textViewId;
         TextView textViewName;
         TextView textViewUsername;
+        TextView textViewAddress;
+        TextView textViewCompany;
+
 
 
         public ViewHolder(View item) {
@@ -86,6 +91,9 @@ public class UsersAdapter extends  RecyclerView.Adapter<UsersAdapter.ViewHolder>
             textViewId = (TextView) item.findViewById(R.id.id_tv_item_id_user);
             textViewName = (TextView) item.findViewById(R.id.id_tv_item_id_name);
             textViewUsername = (TextView) item.findViewById(R.id.id_tv_item_id_username);
+            textViewAddress = (TextView) item.findViewById(R.id.id_tv_item_id_useradress);
+            textViewCompany = (TextView) item.findViewById(R.id.id_tv_item_id_usercompa);
+
         }
 
         @Override

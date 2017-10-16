@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Tallernuevo</string>
-    <string name="str_tb_title_p1">PANTALLA 1  DE USERS</string>
+    <string name="str_tb_title_p1">TRA-PARCIAL-JJFR</string>
     <string name="str_tb_title_p2">PANTALLA 2  DE POST</string>
-    <string name="str_tb_title_p3">PANTALLA 3  DE COMMENTS</string>
+    <string name="str_tb_title_p3">PANT 3 DE COMMENTS</string>
 </resources>

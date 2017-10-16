@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="430dp"
+    android:layout_height="500dp"
     android:layout_margin="10dp"
     android:background="@drawable/fonodotro"
 
@@ -28,11 +28,15 @@
         android:orientation="vertical"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="86dp"
-        android:background="@drawable/borde_dos">
+        android:background="@drawable/borde_dos"
+        android:layout_margin="5dp"
+        android:padding="10dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
